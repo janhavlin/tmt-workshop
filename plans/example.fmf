@@ -1,0 +1,10 @@
+summary: Basic smoke test
+provision:
+    how: virtual
+    image: fedora
+prepare:
+    how: install
+    package: did
+execute:
+    how: tmt
+    script: did --help
